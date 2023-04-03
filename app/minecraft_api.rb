@@ -25,6 +25,7 @@ class MinecraftApi < Grape::API
 	  get "/_types" do 
 	  	MinecraftItems.minecraft_types[method_name].to_json		
 	  end
+	  
 	  # TODO: Make get routes to take specific types as param
   end
 end
