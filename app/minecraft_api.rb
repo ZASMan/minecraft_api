@@ -17,10 +17,16 @@ class MinecraftApi < Grape::API
 	  end
 
 	  desc "Returns a list of all types"
-	    get "/types" do
+	  get "/types" do
 	    MinecraftItems.all_types.to_json
 	  end
 
+	  desc "Returns a specific minecraft block 'type'"
+	  get "/:material_type" do 
+	  	material_type = params[:material_type]
+	  	MinecraftItems.minecraft_types[material_type].to_json		
+	  end
+	  
 	  # TODO: Make get routes to take specific types as param
   end
 end

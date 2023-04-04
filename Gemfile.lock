@@ -105,6 +105,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   activemodel
@@ -118,9 +119,6 @@ DEPENDENCIES
   sinatra
   thin
   webrick
-
-RUBY VERSION
-   ruby 3.0.3p157
 
 BUNDLED WITH
    2.4.7
