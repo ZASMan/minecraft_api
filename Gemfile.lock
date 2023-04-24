@@ -68,6 +68,8 @@ GEM
     rack (2.2.6.4)
     rack-accept (0.4.5)
       rack (>= 0.4)
+    rack-cors (2.0.1)
+      rack (>= 2.0.0)
     rack-protection (3.0.5)
       rack
     rake (13.0.6)
@@ -114,6 +116,7 @@ DEPENDENCIES
   http
   minecraft_items
   puma
+  rack-cors
   rake
   rspec
   sinatra
